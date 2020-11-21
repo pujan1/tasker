@@ -1,0 +1,10 @@
+const PROGRESSSTATUS = Object.freeze({
+  NEW: 'NEW',
+  INPROGRESS: 'INPROGRESS',
+  BLOCKED: 'BLOCKED',
+  DONE: 'DONE',
+  CLOSED: 'CLOSED'
+});
+
+
+export default PROGRESSSTATUS;
