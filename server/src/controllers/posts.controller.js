@@ -11,6 +11,13 @@ postsController.get = (req, res) => {
 
 };
 
+postsController.getOne = (req, res) => {
+  post.findOne({ _id: req.params.id })
+    .then((response) => res.status(200).json(response))
+    .catch((err) => res.status(500).json(err));
+
+};
+
 postsController.post = (req, res, next) => {
 
   const post = new post({
